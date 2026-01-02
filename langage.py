@@ -168,7 +168,7 @@ for i in range(1, 11, 2):
 # ---------------------------
 
 # Loop in list or string
-# In C: for (int i = 1; str[i]; i++)
+# In C: for (int i = 0; str[i]; i++)
 string = "this is string."
 for i in string:
     print(f"{i}", end="") # in this loop print string Letter by letter
@@ -367,3 +367,4 @@ except Exception as error:
     # A 'catch-all' for any other unexpected errors
     # 'e' contains the error message (similar to strerror in C)
     print(f"An unexpected error occurred: {error}")
+
