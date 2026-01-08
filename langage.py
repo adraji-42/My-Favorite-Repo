@@ -252,6 +252,14 @@ my_set = {1, 2, 3, 3, "python"}
 
 # 2-3-1. Print Set (Note: duplicate '3' is removed automatically)
 print(f"Set: {my_set}") # Output: Random {3, 'python', 1, 2} or {2, "python", 3, 1} or ...
+"""
+Note:
+    - Sets are 'unordered' because they don't support indexing.
+    - The print order depends on the Internal Hash Table.
+    - Inside the same session (Run-time), the order remains constant.
+    - Between different sessions, the order may change due to 'Hash Randomization'.
+    - Elements must be 'Hashable' (Immutable like strings, ints, tuples).
+"""
 
 # 2-3-2. Checking Existence (No Indexing in Sets)
 # In C: you need a loop to check. In Python:
@@ -367,4 +375,5 @@ except Exception as error:
     # A 'catch-all' for any other unexpected errors
     # 'e' contains the error message (similar to strerror in C)
     print(f"An unexpected error occurred: {error}")
+
 
